@@ -169,7 +169,6 @@ def autodiscover():
             importlib.import_module("caches", app)
         except (ImportError, AttributeError):
             continue
-        # __import__("{0}.caches".format(app))
 
 
 def close_caches(**kwargs):
